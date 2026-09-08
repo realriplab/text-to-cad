@@ -88,17 +88,14 @@ export function SiteHeaderClient({
           href="/"
           className="flex min-w-0 items-center gap-2 text-foreground transition hover:text-primary"
         >
-          {/* unoptimized: a 22px logo mark gains nothing from the image
-              optimizer, and this way it is served straight from /public
-              instead of costing a function invocation per render. */}
           <Image
-            src="/favicon.png"
+            src="/favicon.png?v=mesh-blue"
             alt=""
             width={22}
             height={22}
             priority
             unoptimized
-            className="size-[22px] shrink-0 rounded-[5px]"
+            className="size-[22px] shrink-0"
           />
           <span className="min-w-0 truncate text-sm font-medium">
             text-to-cad

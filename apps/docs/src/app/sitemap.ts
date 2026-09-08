@@ -8,5 +8,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 1,
     },
+    {
+      url: absoluteUrl("/icon"),
+      changeFrequency: "monthly",
+      priority: 0.2,
+    },
   ];
 }
